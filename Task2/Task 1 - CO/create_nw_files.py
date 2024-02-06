@@ -1,9 +1,16 @@
-radii = [1.0, 1.25, 1.5, 1.75, 2.0]
-            
+import os
+def createFile(radius):
+    myExamplefile = open("CO_example.txt", "r")
 
-def createFileEasy(radius):
-    myExamplefile = open("/Users/elias/Documents/NTNU/V2024/TKJ4170/Oving2/Task 1 - CO/CO_example.txt", "r")
-    myFile = open("C0_" + str(radius) + ".nw", "w")
+    try:
+        folderPath = "CO_" + str(radius)
+        os.mkdir(folderPath)
+    except FileExistsError:
+        pass
+
+    #Replace this with the absolute path of your parent folder
+    filePath = "/Users/elias/Documents/NTNU/V2024/TKJ4170/TKJ4170/Task2/Task 1 - CO/" + folderPath + "/CO_" + str(radius) + ".nw" 
+    myFile = open(filePath, "w")
 
     for line in myExamplefile:
         if line.split() == []:
@@ -14,12 +21,8 @@ def createFileEasy(radius):
             words = line.split()
             words[3] = str(radius)
 
-            print("Old line: " + line + "\n")
             line = " " +  " ".join(words)
             myFile.write(line + "\n")
         else:
             myFile.write(line)
     myFile.close()
-
-
-createFileEasy(0.10)
