@@ -8,11 +8,11 @@ memory total 2 gb
 charge 0
 geometry units angstrom print xyz
  C 0.00000 0.00000 0.00000
- O 0.00000 0.00000 1.11014
+ O 0.00000 0.00000 1.0
 end
 
 basis spherical
  * library cc-pVDZ
 end
 
-task scf
+task scf optimize

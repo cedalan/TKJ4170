@@ -61,9 +61,9 @@ task scf
            Job information
            ---------------
 
-    hostname        = Eliass-MacBook-Air.local
+    hostname        = dhcp-10-22-10-180.wlan.ntnu.no
     program         = nwchem
-    date            = Sun Feb 11 18:30:44 2024
+    date            = Thu Mar 21 11:22:49 2024
 
     compiled        = Sun_Dec_10_10:51:21_2023
     source          = /private/tmp/nwchem-20231210-5888-3uvdjr/nwchem-7.2.2
@@ -373,7 +373,7 @@ task scf
 
  Integral file          = ./molecule.aoints.0
  Record size in doubles =  65536        No. of integs per rec  =  43688
- Max. records in memory =      3        Max. records in file   = 160207
+ Max. records in memory =      3        Max. records in file   = 155316
  No. of bits per label  =      8        No. of bits per value  =     64
 
 
@@ -446,7 +446,7 @@ File balance: exchanges=     0  moved=     0  time=   0.0
      1      1.001866  1 C  s          
 
  Vector    3  Occ=2.000000D+00  E=-1.649233D+00  Symmetry=a1
-              MO Center=  2.1D-17, -6.9D-18,  1.1D-01, r^2= 3.5D-01
+              MO Center=  2.1D-17, -6.4D-18,  1.1D-01, r^2= 3.5D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     16      0.410828  2 O  s                 17      0.258203  2 O  s          
@@ -462,23 +462,21 @@ File balance: exchanges=     0  moved=     0  time=   0.0
      2     -0.214958  1 C  s                  6     -0.166693  1 C  pz         
 
  Vector    5  Occ=2.000000D+00  E=-7.237619D-01  Symmetry=e
-              MO Center= -9.6D-17, -7.9D-17,  1.5D-01, r^2= 6.8D-01
+              MO Center=  6.9D-17, -6.7D-17,  1.5D-01, r^2= 6.8D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-    18      0.425381  2 O  px                19      0.348213  2 O  py         
-     4      0.257448  1 C  px                21      0.235394  2 O  px         
-     5      0.210744  1 C  py                22      0.192691  2 O  py         
+    18      0.545097  2 O  px                 4      0.329902  1 C  px         
+    21      0.301641  2 O  px         
 
  Vector    6  Occ=2.000000D+00  E=-7.237619D-01  Symmetry=e
-              MO Center= -3.7D-17,  4.5D-17,  1.5D-01, r^2= 6.8D-01
+              MO Center=  1.7D-18, -1.3D-17,  1.5D-01, r^2= 6.8D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-    19      0.425381  2 O  py                18     -0.348213  2 O  px         
-     5      0.257448  1 C  py                22      0.235394  2 O  py         
-     4     -0.210744  1 C  px                21     -0.192691  2 O  px         
+    19      0.545097  2 O  py                 5      0.329902  1 C  py         
+    22      0.301641  2 O  py         
 
  Vector    7  Occ=2.000000D+00  E=-5.209878D-01  Symmetry=a1
-              MO Center= -2.4D-18,  2.5D-17, -9.4D-01, r^2= 7.8D-01
+              MO Center= -1.4D-16,  1.3D-17, -9.4D-01, r^2= 7.8D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      3      0.621739  1 C  s                  6     -0.438786  1 C  pz         
@@ -486,48 +484,46 @@ File balance: exchanges=     0  moved=     0  time=   0.0
     20      0.167348  2 O  pz         
 
  Vector    8  Occ=0.000000D+00  E= 2.331199D-01  Symmetry=e
-              MO Center= -6.4D-17, -3.2D-17, -5.3D-01, r^2= 1.9D+00
+              MO Center= -5.0D-17, -2.9D-17, -5.3D-01, r^2= 1.9D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     7      0.855765  1 C  px                21     -0.551933  2 O  px         
-     8      0.441719  1 C  py                 4      0.316825  1 C  px         
-    18     -0.309892  2 O  px                22     -0.284890  2 O  py         
-     5      0.163535  1 C  py                19     -0.159957  2 O  py         
+     7      0.829966  1 C  px                21     -0.535293  2 O  px         
+     8      0.488475  1 C  py                22     -0.315045  2 O  py         
+     4      0.307273  1 C  px                18     -0.300549  2 O  px         
+     5      0.180845  1 C  py                19     -0.176888  2 O  py         
 
  Vector    9  Occ=0.000000D+00  E= 2.331199D-01  Symmetry=e
-              MO Center= -2.3D-16,  5.5D-16, -5.3D-01, r^2= 1.9D+00
+              MO Center=  4.6D-17, -7.9D-17, -5.3D-01, r^2= 1.9D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     8      0.855765  1 C  py                22     -0.551933  2 O  py         
-     7     -0.441719  1 C  px                 5      0.316825  1 C  py         
-    19     -0.309892  2 O  py                21      0.284890  2 O  px         
-     4     -0.163535  1 C  px                18      0.159957  2 O  px         
+     8      0.829966  1 C  py                22     -0.535293  2 O  py         
+     7     -0.488475  1 C  px                21      0.315045  2 O  px         
+     5      0.307273  1 C  py                19     -0.300549  2 O  py         
+     4     -0.180845  1 C  px                18      0.176888  2 O  px         
 
  Vector   10  Occ=0.000000D+00  E= 3.924222D-01  Symmetry=a1
-              MO Center=  1.4D-16, -2.3D-16, -3.3D-01, r^2= 3.1D+00
+              MO Center=  2.0D-17, -1.7D-16, -3.3D-01, r^2= 3.1D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     17      2.124389  2 O  s                  3     -1.830750  1 C  s          
      9     -1.772176  1 C  pz                23     -0.399563  2 O  pz         
 
  Vector   11  Occ=0.000000D+00  E= 6.813781D-01  Symmetry=e
-              MO Center= -2.2D-17, -5.3D-18, -4.0D-01, r^2= 1.7D+00
+              MO Center= -3.6D-16, -3.6D-16, -4.0D-01, r^2= 1.7D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     4      1.012616  1 C  px                 7     -0.841679  1 C  px         
-     5      0.244741  1 C  py                 8     -0.203427  1 C  py         
-    21     -0.178317  2 O  px         
+     5      0.739115  1 C  py                 4      0.734166  1 C  px         
+     8     -0.614347  1 C  py                 7     -0.610233  1 C  px         
 
  Vector   12  Occ=0.000000D+00  E= 6.813781D-01  Symmetry=e
-              MO Center= -6.6D-18,  2.7D-17, -4.0D-01, r^2= 1.7D+00
+              MO Center= -1.5D-16,  1.5D-16, -4.0D-01, r^2= 1.7D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     5      1.012616  1 C  py                 8     -0.841679  1 C  py         
-     4     -0.244741  1 C  px                 7      0.203427  1 C  px         
-    22     -0.178317  2 O  py         
+     4      0.739115  1 C  px                 5     -0.734166  1 C  py         
+     7     -0.614347  1 C  px                 8      0.610233  1 C  py         
 
  Vector   13  Occ=0.000000D+00  E= 7.350617D-01  Symmetry=a1
-              MO Center=  2.7D-16, -4.9D-16, -1.0D+00, r^2= 1.8D+00
+              MO Center= -5.9D-18, -7.7D-19, -1.0D+00, r^2= 1.8D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      3      1.689709  1 C  s                  2     -0.901824  1 C  s          
@@ -536,7 +532,7 @@ File balance: exchanges=     0  moved=     0  time=   0.0
      1     -0.307726  1 C  s                 20     -0.175662  2 O  pz         
 
  Vector   14  Occ=0.000000D+00  E= 1.012334D+00  Symmetry=a1
-              MO Center=  1.1D-17,  6.2D-16,  7.1D-01, r^2= 1.4D+00
+              MO Center=  1.3D-17,  6.3D-16,  7.1D-01, r^2= 1.4D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     23      1.683409  2 O  pz                 2      1.355541  1 C  s          
@@ -546,25 +542,25 @@ File balance: exchanges=     0  moved=     0  time=   0.0
     12      0.180632  1 C  d  0       
 
  Vector   15  Occ=0.000000D+00  E= 1.194675D+00  Symmetry=e
-              MO Center=  4.0D-16, -6.9D-16,  3.3D-01, r^2= 1.7D+00
+              MO Center=  5.7D-16, -3.3D-16,  3.3D-01, r^2= 1.7D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-    22      1.401898  2 O  py                 8     -0.736885  1 C  py         
-    19     -0.738158  2 O  py                21     -0.640357  2 O  px         
-    11     -0.404882  1 C  d -1               7      0.336593  1 C  px         
-    18      0.337175  2 O  px                13     -0.184942  1 C  d  1       
+    21      1.302757  2 O  px                22     -0.823528  2 O  py         
+     7     -0.684773  1 C  px                18     -0.685957  2 O  px         
+     8      0.432874  1 C  py                19      0.433622  2 O  py         
+    13      0.376250  1 C  d  1              11      0.237843  1 C  d -1       
 
  Vector   16  Occ=0.000000D+00  E= 1.194675D+00  Symmetry=e
-              MO Center= -7.3D-16, -1.4D-16,  3.3D-01, r^2= 1.7D+00
+              MO Center= -3.5D-16, -8.1D-17,  3.3D-01, r^2= 1.7D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-    21      1.401898  2 O  px                 7     -0.736885  1 C  px         
-    18     -0.738158  2 O  px                22      0.640357  2 O  py         
-    13      0.404882  1 C  d  1               8     -0.336593  1 C  py         
-    19     -0.337175  2 O  py                11     -0.184942  1 C  d -1       
+    22      1.302757  2 O  py                21      0.823528  2 O  px         
+     8     -0.684773  1 C  py                19     -0.685957  2 O  py         
+     7     -0.432874  1 C  px                18     -0.433622  2 O  px         
+    11     -0.376250  1 C  d -1              13      0.237843  1 C  d  1       
 
  Vector   17  Occ=0.000000D+00  E= 1.345865D+00  Symmetry=b1
-              MO Center=  1.4D-16, -2.4D-16, -5.0D-01, r^2= 9.0D-01
+              MO Center=  1.4D-16, -2.3D-16, -5.0D-01, r^2= 9.0D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     14      0.968824  1 C  d  2       
