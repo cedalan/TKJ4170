@@ -1,0 +1,17 @@
+echo
+start molecule
+title "H2O"
+charge 0
+memory total 2 gb
+geometry units angstrom
+H 0.86681 0.60144 0.00000
+H -0.86681 0.60144 0.00000
+O 0.00000 -0.07579 0.00000
+H 0.86681 0.60144 20.00000
+H -0.86681 0.60144 20.00000
+O 0.00000 -0.07579 20.00000
+end
+basis spherical
+* library cc-pVDZ
+end
+task mp2
