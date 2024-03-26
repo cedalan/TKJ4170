@@ -1,0 +1,19 @@
+echo
+
+start molecule
+
+title "CHO"
+memory total 4 gb
+
+charge 0
+geometry units angstrom print xyz
+ H 0.00000 0.00000 -0.5 
+ C 0.00000 0.00000 0.00000
+ O 0.00000 0.00000 1.0
+end
+
+basis spherical
+ * library cc-pVDZ
+end
+
+task scf optimize
