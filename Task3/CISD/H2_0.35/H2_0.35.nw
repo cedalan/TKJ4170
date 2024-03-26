@@ -1,0 +1,24 @@
+echo
+
+start molecule
+
+title "H2"
+charge 0
+
+memory total 2 gb
+
+geometry units angstrom noautoz
+symmetry group d2h
+H 0.00000 0.00000 0.35
+end
+
+basis spherical
+ * library aug-cc-pVDZ
+end
+
+tce
+ cisd
+ maxiter 6000
+end
+
+task tce energy

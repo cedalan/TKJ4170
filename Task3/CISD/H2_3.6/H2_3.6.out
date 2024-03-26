@@ -1,0 +1,995 @@
+ argument  1 = H2_3.6/H2_3.6.nw
+
+
+
+============================== echo of input deck ==============================
+echo
+
+start molecule
+
+title "H2"
+charge 0
+
+memory total 2 gb
+
+geometry units angstrom noautoz
+symmetry group d2h
+H 0.00000 0.00000 3.6
+end
+
+basis spherical
+ * library aug-cc-pVDZ
+end
+
+tce
+ cisd
+ maxiter 6000
+end
+
+task tce energy
+================================================================================
+
+
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.2.2
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2022
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = Eliass-MacBook-Air.local
+    program         = nwchem
+    date            = Wed Feb 28 14:15:32 2024
+
+    compiled        = Sun_Dec_10_10:51:21_2023
+    source          = /private/tmp/nwchem-20231210-5888-3uvdjr/nwchem-7.2.2
+    nwchem branch   = 7.2.2
+    nwchem revision = 74936fb9
+    ga revision     = 5.8.0
+    use scalapack   = T
+    input           = H2_3.6/H2_3.6.nw
+    prefix          = molecule.
+    data base       = ./molecule.db
+    status          = startup
+    nproc           =        4
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   67108860 doubles =    512.0 Mbytes
+    stack    =   67108865 doubles =    512.0 Mbytes
+    global   =  134217728 doubles =   1024.0 Mbytes (distinct from heap & stack)
+    total    =  268435453 doubles =   2048.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = .
+  0 scratch   = .
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+                                        H2
+                                        --
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 H                    1.0000     0.00000000     0.00000000     3.60000000
+    2 H                    1.0000     0.00000000     0.00000000    -3.60000000
+
+      Atomic Mass 
+      ----------- 
+
+      H                  1.007825
+
+
+ Effective nuclear repulsion energy (a.u.)       0.0734968401
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+
+      Symmetry information
+      --------------------
+
+ Group name             D2h       
+ Group number             26
+ Group order               8
+ No. of unique centers     1
+
+      Symmetry unique atoms
+
+     1
+
+
+            XYZ format geometry
+            -------------------
+     2
+ geometry
+ H                     0.00000000     0.00000000     3.60000000
+ H                     0.00000000     0.00000000    -3.60000000
+
+  library name resolved from: .nwchemrc
+  library file name is: </opt/homebrew/Cellar/nwchem/7.2.2/share/nwchem/libraries/>
+  
+
+
+ Summary of "ao basis" -> "" (spherical)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ *                        aug-cc-pVDZ                 on all atoms 
+
+
+                      Basis "ao basis" -> "ao basis" (spherical)
+                      -----
+  H (Hydrogen)
+  ------------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  1.30100000E+01  0.019685
+  1 S  1.96200000E+00  0.137977
+  1 S  4.44600000E-01  0.478148
+
+  2 S  1.22000000E-01  1.000000
+
+  3 S  2.97400000E-02  1.000000
+
+  4 P  7.27000000E-01  1.000000
+
+  5 P  1.41000000E-01  1.000000
+
+
+
+ Summary of "ao basis" -> "ao basis" (spherical)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ H                        aug-cc-pVDZ                5        9   3s2p
+
+
+                                 NWChem SCF Module
+                                 -----------------
+
+
+                                        H2
+
+
+
+  ao basis        = "ao basis"
+  functions       =    18
+  atoms           =     2
+  closed shells   =     1
+  open shells     =     0
+  charge          =   0.00
+  wavefunction    = RHF 
+  input vectors   = atomic
+  output vectors  = ./molecule.movecs
+  use symmetry    = T
+  symmetry adapt  = T
+
+
+ Summary of "ao basis" -> "ao basis" (spherical)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ H                        aug-cc-pVDZ                5        9   3s2p
+
+
+      Symmetry analysis of basis
+      --------------------------
+
+        ag          5
+        au          0
+        b1g         0
+        b1u         5
+        b2g         2
+        b2u         2
+        b3g         2
+        b3u         2
+
+
+ Forming initial guess at       0.0s
+
+
+      Superposition of Atomic Density Guess
+      -------------------------------------
+
+ Sum of atomic energies:          -0.99866926
+
+      Non-variational initial energy
+      ------------------------------
+
+ Total energy =      -0.687057
+ 1-e energy   =      -1.145662
+ 2-e energy   =       0.385108
+ HOMO         =      -0.199897
+ LUMO         =      -0.199743
+
+
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ Warning - the HOMO and LUMO are degenerate and you are using symmetry.
+ This can lead to non-variational energies and poor convergence.
+ Modify the initial guess, or use an open-shell wavefunction, or turn
+ off symmetry.
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+      Symmetry analysis of molecular orbitals - initial
+      -------------------------------------------------
+
+
+ !! scf_movecs_sym_adapt:    8 vectors were symmetry contaminated
+
+  Symmetry fudging
+
+ !! scf_movecs_sym_adapt:    8 vectors were symmetry contaminated
+
+  Numbering of irreducible representations: 
+
+     1 ag          2 au          3 b1g         4 b1u         5 b2g     
+     6 b2u         7 b3g         8 b3u     
+
+  Orbital symmetries:
+
+     1 ag          2 b1u         3 ag          4 b1u         5 b2u     
+     6 b3u         7 b3g         8 b2g         9 ag         10 b1u     
+    11 ag      
+
+
+ Starting SCF solution at       0.0s
+
+
+
+ ----------------------------------------------
+         Quadratically convergent ROHF
+
+ Convergence threshold     :          1.000E-04
+ Maximum no. of iterations :           30
+ Final Fock-matrix accuracy:          1.000E-07
+ ----------------------------------------------
+
+
+ #quartets = 7.100D+02 #integrals = 1.551D+03 #direct =  0.0% #cached =100.0%
+
+
+ Integral file          = ./molecule.aoints.0
+ Record size in doubles =  65536        No. of integs per rec  =  43688
+ Max. records in memory =      3        Max. records in file   = 159221
+ No. of bits per label  =      8        No. of bits per value  =     64
+
+
+File balance: exchanges=     0  moved=     0  time=   0.0
+
+
+              iter       energy          gnorm     gmax       time
+             ----- ------------------- --------- --------- --------
+                 1       -0.7507791088  3.21D-02  2.47D-02      0.0
+                 2       -0.7511700780  4.09D-04  3.35D-04      0.0
+                 3       -0.7511701475  1.65D-06  1.39D-06      0.1
+
+
+       Final RHF  results 
+       ------------------ 
+
+         Total SCF energy =     -0.751170147464
+      One-electron energy =     -1.117859500501
+      Two-electron energy =      0.293192512898
+ Nuclear repulsion energy =      0.073496840139
+
+        Time for solution =      0.0s
+
+
+
+       Symmetry analysis of molecular orbitals - final
+       -----------------------------------------------
+
+  Numbering of irreducible representations: 
+
+     1 ag          2 au          3 b1g         4 b1u         5 b2g     
+     6 b2u         7 b3g         8 b3u     
+
+  Orbital symmetries:
+
+     1 ag          2 b1u         3 ag          4 b1u         5 ag      
+     6 b3u         7 b2u         8 b2g         9 b3g        10 b1u     
+    11 ag      
+
+             Final eigenvalues
+             -----------------
+
+              1      
+    1   -0.2657
+    2   -0.1919
+    3    0.0760
+    4    0.0942
+    5    0.2851
+    6    0.2853
+    7    0.2853
+    8    0.2859
+    9    0.2859
+   10    0.2866
+   11    0.7352
+
+                       ROHF Final Molecular Orbital Analysis
+                       -------------------------------------
+
+ Vector    1  Occ=2.000000D+00  E=-2.657372D-01  Symmetry=ag
+              MO Center=  0.0D+00,  0.0D+00,  1.1D-16, r^2= 1.4D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.373017  1 H  s                 11      0.373017  2 H  s          
+     1      0.316342  1 H  s                 10      0.316342  2 H  s          
+
+ Vector    2  Occ=0.000000D+00  E=-1.918852D-01  Symmetry=b1u
+              MO Center=  0.0D+00,  0.0D+00, -6.3D-17, r^2= 1.4D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.370941  1 H  s                 11     -0.370941  2 H  s          
+     1      0.317354  1 H  s                 10     -0.317354  2 H  s          
+
+ Vector    3  Occ=0.000000D+00  E= 7.602763D-02  Symmetry=ag
+              MO Center=  0.0D+00,  0.0D+00, -2.5D-16, r^2= 2.1D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.910027  1 H  s                 12      0.910027  2 H  s          
+     2     -0.561255  1 H  s                 11     -0.561255  2 H  s          
+
+ Vector    4  Occ=0.000000D+00  E= 9.421154D-02  Symmetry=b1u
+              MO Center=  0.0D+00,  0.0D+00, -9.2D-17, r^2= 2.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      1.002856  1 H  s                 12     -1.002856  2 H  s          
+     2     -0.593911  1 H  s                 11      0.593911  2 H  s          
+
+ Vector    5  Occ=0.000000D+00  E= 2.851035D-01  Symmetry=ag
+              MO Center=  1.1D-18, -6.7D-18, -2.0D-12, r^2= 1.6D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     9      0.715264  1 H  pz                18     -0.715264  2 H  pz         
+
+ Vector    6  Occ=0.000000D+00  E= 2.853255D-01  Symmetry=b3u
+              MO Center=  3.2D-20, -3.7D-54,  5.4D-17, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     7      0.715364  1 H  px                16      0.715364  2 H  px         
+
+ Vector    7  Occ=0.000000D+00  E= 2.853255D-01  Symmetry=b2u
+              MO Center=  7.7D-54, -1.1D-19,  5.4D-17, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8      0.715364  1 H  py                17      0.715364  2 H  py         
+
+ Vector    8  Occ=0.000000D+00  E= 2.858923D-01  Symmetry=b2g
+              MO Center= -2.4D-21, -2.8D-51, -1.6D-16, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     7      0.715379  1 H  px                16     -0.715379  2 H  px         
+
+ Vector    9  Occ=0.000000D+00  E= 2.858923D-01  Symmetry=b3g
+              MO Center=  1.1D-54,  1.4D-32, -1.6D-16, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8      0.715379  1 H  py                17     -0.715379  2 H  py         
+
+ Vector   10  Occ=0.000000D+00  E= 2.866273D-01  Symmetry=b1u
+              MO Center= -1.9D-22,  3.4D-23,  2.0D-12, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     9      0.715248  1 H  pz                18      0.715248  2 H  pz         
+
+ Vector   11  Occ=0.000000D+00  E= 7.351897D-01  Symmetry=ag
+              MO Center= -9.2D-20,  1.0D-19,  1.2D-15, r^2= 1.5D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      1.192779  1 H  s                 11      1.192779  2 H  s          
+     1     -0.976800  1 H  s                 10     -0.976800  2 H  s          
+     3     -0.429810  1 H  s                 12     -0.429810  2 H  s          
+
+
+ center of mass
+ --------------
+ x =   0.00000000 y =   0.00000000 z =   0.00000000
+
+ moments of inertia (a.u.)
+ ------------------
+          93.286284512828           0.000000000000           0.000000000000
+           0.000000000000          93.286284512828           0.000000000000
+           0.000000000000           0.000000000000           0.000000000000
+
+  Mulliken analysis of the total density
+  --------------------------------------
+
+    Atom       Charge   Shell Charges
+ -----------   ------   -------------------------------------------------------
+    1 H    1     1.00   0.38  0.50  0.11 -0.00  0.00
+    2 H    1     1.00   0.38  0.50  0.11 -0.00  0.00
+
+       Multipole analysis of the density wrt the origin
+       ------------------------------------------------
+
+     L   x y z        total         open         nuclear
+     -   - - -        -----         ----         -------
+     0   0 0 0     -0.000000      0.000000      2.000000
+
+     1   1 0 0      0.000000      0.000000      0.000000
+     1   0 1 0      0.000000      0.000000      0.000000
+     1   0 0 1     -0.000000      0.000000      0.000000
+
+     2   2 0 0     -3.229757      0.000000      0.000000
+     2   1 1 0      0.000000      0.000000      0.000000
+     2   1 0 1      0.000000      0.000000      0.000000
+     2   0 2 0     -3.229757      0.000000      0.000000
+     2   0 1 1      0.000000      0.000000      0.000000
+     2   0 0 2     -2.489475      0.000000     92.561987
+
+
+ Parallel integral file used       4 records with       0 large values
+
+                   NWChem Extensible Many-Electron Theory Module
+                   ---------------------------------------------
+
+              ======================================================
+                   This portion of the program was automatically
+                  generated by a Tensor Contraction Engine (TCE).
+                  The development of this portion of the program
+                 and TCE was supported by US Department of Energy,
+                Office of Science, Office of Basic Energy Science.
+                      TCE is a product of Battelle and PNNL.
+              Please cite: S.Hirata, J.Phys.Chem.A 107, 9887 (2003).
+              ======================================================
+
+                                        H2
+
+
+            General Information
+            -------------------
+      Number of processors :     4
+         Wavefunction type : Restricted Hartree-Fock
+          No. of electrons :     2
+           Alpha electrons :     1
+            Beta electrons :     1
+           No. of orbitals :    36
+            Alpha orbitals :    18
+             Beta orbitals :    18
+        Alpha frozen cores :     0
+         Beta frozen cores :     0
+     Alpha frozen virtuals :     0
+      Beta frozen virtuals :     0
+         Spin multiplicity : singlet 
+    Number of AO functions :    18
+       Number of AO shells :    10
+        Use of symmetry is : on 
+      Symmetry adaption is : on 
+         Schwarz screening : 0.10D-09
+
+          Correlation Information
+          -----------------------
+          Calculation type : Configuration interaction singles & doubles                 
+   Perturbative correction : none                                                        
+            Max iterations :     6000
+        Residual threshold : 0.10D-06
+     T(0) DIIS level shift : 0.00D+00
+     L(0) DIIS level shift : 0.00D+00
+     T(1) DIIS level shift : 0.00D+00
+     L(1) DIIS level shift : 0.00D+00
+     T(R) DIIS level shift : 0.00D+00
+     T(I) DIIS level shift : 0.00D+00
+   CC-T/L Amplitude update :  5-th order DIIS
+                I/O scheme : Global Array Library
+        L-threshold :  0.10D-06
+        EOM-threshold :  0.10D-06
+ no EOMCCSD initial starts read in
+ TCE RESTART OPTIONS
+ READ_INT:   F
+ WRITE_INT:  F
+ READ_TA:    F
+ WRITE_TA:   F
+ READ_XA:    F
+ WRITE_XA:   F
+ READ_IN3:   F
+ WRITE_IN3:  F
+ SLICE:      F
+ D4D5:       F
+ quantumc:   F
+ qrotation:  F
+ pwtce:      F
+ qducc:      F
+ nacto:                         0
+ nrotv:                         0
+ nrot:                          0
+
+            Memory Information
+            ------------------
+          Available GA space size is     536870588 doubles
+          Available MA space size is     134216828 doubles
+
+ Maximum block size        32 doubles
+
+ tile_dim =      5
+
+ Block   Spin    Irrep     Size     Offset   Alpha
+ -------------------------------------------------
+   1    alpha     ag     1 doubles       0       1
+   2    beta      ag     1 doubles       1       1
+   3    alpha     ag     4 doubles       2       3
+   4    alpha     b1u    5 doubles       6       4
+   5    alpha     b2g    2 doubles      11       5
+   6    alpha     b2u    2 doubles      13       6
+   7    alpha     b3g    2 doubles      15       7
+   8    alpha     b3u    2 doubles      17       8
+   9    beta      ag     4 doubles      19       3
+  10    beta      b1u    5 doubles      23       4
+  11    beta      b2g    2 doubles      28       5
+  12    beta      b2u    2 doubles      30       6
+  13    beta      b3g    2 doubles      32       7
+  14    beta      b3u    2 doubles      34       8
+
+ Global array virtual files algorithm will be used
+
+ Parallel file system coherency ......... OK
+  avail0,avail1,avail0-avail1                335192               335192                    0
+  avail0,avail1,avail0-avail1                335192               335192                    0
+  avail0,avail1,avail0-avail1                335192               335207                  -15
+  avail0,avail1,avail0-avail1                335192               335207                  -15
+
+ #quartets = 1.226D+03 #integrals = 2.677D+03 #direct =  0.0% #cached =100.0%
+
+
+ Integral file          = ./molecule.aoints.0
+ Record size in doubles =  65536        No. of integs per rec  =  43688
+ Max. records in memory =      3        Max. records in file   =   9949
+ No. of bits per label  =      8        No. of bits per value  =     64
+
+
+File balance: exchanges=     0  moved=     0  time=   0.0
+
+
+ Fock matrix recomputed
+ 1-e file size   =               66
+ 1-e file name   = ./molecule.f1
+ Cpu & wall time / sec            0.0            0.0
+
+ tce_ao2e: fast2e=1
+ half-transformed integrals in memory
+
+ 2-e (intermediate) file size =          228744
+ 2-e (intermediate) file name = ./molecule.v2i
+ Cpu & wall time / sec            0.0            0.0
+
+ tce_mo2e: fast2e=1
+ 2-e integrals stored in memory
+
+ 2-e file size   =            22285
+ 2-e file name   = ./molecule.v2
+ Cpu & wall time / sec            0.0            0.0
+ T1-number-of-tasks                    1
+
+ t1 file size   =                4
+ t1 file name   = ./molecule.t1
+ t1 file handle =       -999
+ T2-number-of-boxes                   12
+
+ t2 file size   =              114
+ t2 file name   = ./molecule.t2
+ t2 file handle =       -996
+
+ CISD iterations
+ --------------------------------------------------------
+ Iter          Residuum       Correlation     Cpu    Wall
+ --------------------------------------------------------
+    1   0.4531191392083  -0.3615008136022     0.0     0.0
+    2   0.5128961287365   0.1670069886757     0.0     0.0
+    3   0.3222969432436  -0.1193572766657     0.0     0.0
+    4   0.3490135932715  -0.3588257047744     0.0     0.0
+    5   0.4382045906789   0.0962419271371     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                    5                    5
+    6   0.1500006784170  -0.1576478582380     0.0     0.0
+    7   0.4118857898634  -0.3821206222082     0.0     0.0
+    8   0.4823654126195   0.1872116540714     0.0     0.0
+    9   0.2862528953931  -0.0258369539882     0.0     0.0
+   10   0.3144108849813  -0.3176029078236     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   10                    5
+   11   0.1817422375818  -0.1304840225527     0.0     0.0
+   12   0.4933572574644  -0.4026143292988     0.0     0.0
+   13   0.5618236540197   0.2738140884394     0.0     0.0
+   14   0.4016526047670   0.3121765543430     0.0     0.0
+   15   3.2740920037466   0.8084797018788     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   15                    5
+   16   0.1613667951863  -0.1494857134796     0.0     0.0
+   17   0.4459662536964  -0.3910839282496     0.0     0.0
+   18   0.5094243356290   0.2241199353400     0.0     0.0
+   19   0.1720698930059   0.1062531852242     0.0     0.0
+   20   0.2669230437177  -0.0635999738944     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   20                    5
+   21   0.1617066789266  -0.1491903758564     0.0     0.0
+   22   0.4456803768945  -0.3910090218643     0.0     0.0
+   23   0.5090267605766   0.2236875254853     0.0     0.0
+   24   0.1738311346537   0.1046310179086     0.0     0.0
+   25   0.2680023027372  -0.0681492146521     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   25                    5
+   26   0.1569367521989  -0.1533376548895     0.0     0.0
+   27   0.4339150766214  -0.3880274078458     0.0     0.0
+   28   0.4990156667721   0.2110827463324     0.0     0.0
+   29   0.2237373828873   0.0574571462918     0.0     0.0
+   30   0.2642420302370  -0.1853117964118     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   30                    5
+   31   0.1488262696602  -0.1600311808303     0.0     0.0
+   32   0.4134706589455  -0.3827135621683     0.0     0.0
+   33   0.4839766515834   0.1889865409288     0.0     0.0
+   34   0.2835687928292  -0.0203512019581     0.0     0.0
+   35   0.3082879157790  -0.3119836696263     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   35                    5
+   36   0.1372382159767  -0.1689453042604     0.0     0.0
+   37   0.3825736706835  -0.3744122325864     0.0     0.0
+   38   0.4655294029370   0.1552529632251     0.0     0.0
+   39   0.3147651609134  -0.1269549610978     0.0     0.0
+   40   0.3179285571046  -0.3506640846691     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   40                    5
+   41   0.1381988498582  -0.1683975079742     0.0     0.0
+   42   0.3863229361458  -0.3754521584083     0.0     0.0
+   43   0.4676711922421   0.1593965781237     0.0     0.0
+   44   0.3133523223046  -0.1147333418536     0.0     0.0
+   45   0.3355695630870  -0.3541825462779     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   45                    5
+   46   0.1265792992911  -0.1766955743727     0.0     0.0
+   47   0.3534685229373  -0.3663402329088     0.0     0.0
+   48   0.4509405959201   0.1233160501604     0.0     0.0
+   49   0.3271782309858  -0.2142643362269     0.0     0.0
+   50   0.0820882903063  -0.2658805132763     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   50                    5
+   51   0.1248086107094  -0.1780705567326     0.0     0.0
+   52   0.3495894454413  -0.3652406389528     0.0     0.0
+   53   0.4492215977767   0.1190471261978     0.0     0.0
+   54   0.3308732042717  -0.2250336753857     0.0     0.0
+   55   0.0797332842669  -0.2481636711295     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   55                    5
+   56   0.1129319266749  -0.1859956878847     0.0     0.0
+   57   0.3151815000570  -0.3553550140996     0.0     0.0
+   58   0.4322736352924   0.0812772618753     0.0     0.0
+   59   0.3991367543495  -0.3088544214250     0.0     0.0
+   60   0.3825821077287  -0.0551321065465     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   60                    5
+   61   0.0798626556464  -0.2061164427356     0.0     0.0
+   62   0.2177814221445  -0.3256965702528     0.0     0.0
+   63   0.3637709140623  -0.0244496459485     0.0     0.0
+   64   0.6967223156754  -0.4437883966651     0.0     0.0
+   65   1.0029591400942   0.4620853739634     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   65                    5
+   66   0.0487613049925  -0.2232991376318     0.0     0.0
+   67   0.1299532799902  -0.2964001456569     0.0     0.0
+   68   0.2552449283111  -0.1174261655842     0.0     0.0
+   69   0.6448445294124  -0.4413558682313     0.0     0.0
+   70   0.9602752566512   0.4502738801579     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   70                    5
+   71   0.0448451638542  -0.2253294760698     0.0     0.0
+   72   0.1189695678295  -0.2925435310564     0.0     0.0
+   73   0.2379855325071  -0.1288086683102     0.0     0.0
+   74   0.6097274396871  -0.4332555905549     0.0     0.0
+   75   0.8414969831067   0.4115571813058     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   75                    5
+   76   0.0855970189063  -0.2028062081558     0.0     0.0
+   77   0.2351227722556  -0.3311215926000     0.0     0.0
+   78   0.3794968049669  -0.0058707029087     0.0     0.0
+   79   0.6604964605095  -0.4308267366235     0.0     0.0
+   80   0.8235377518065   0.4010872620968     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   80                    5
+   81   0.0486384309507  -0.2233614193091     0.0     0.0
+   82   0.1294519725699  -0.2962464529453     0.0     0.0
+   83   0.2544595876664  -0.1179212417319     0.0     0.0
+   84   0.6432968603644  -0.4410052623807     0.0     0.0
+   85   0.9547185461654   0.4485805894941     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   85                    5
+   86   0.0331626105067  -0.2313288754636     0.0     0.0
+   87   0.0869106174066  -0.2810367288525     0.0     0.0
+   88   0.1828319345533  -0.1616783961977     0.0     0.0
+   89   0.4772810267362  -0.4002891109078     0.0     0.0
+   90   0.5482144871912   0.2623176007571     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   90                    5
+   91   0.0617126333300  -0.2747165219547     0.0     0.0
+   92   0.1415867584197  -0.1824933349180     0.0     0.0
+   93   0.3703037830465  -0.3713365114854     0.0     0.0
+   94   0.4613434950046   0.1422792151574     0.0     0.0
+   95   0.3194196372407  -0.1654474458125     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                   95                    5
+   96   0.0913627479851  -0.2867739541437     0.0     0.0
+   97   0.1999312603171  -0.1499772802420     0.0     0.0
+   98   0.5236694652542  -0.4123422821106     0.0     0.0
+   99   0.6219877308916   0.3149487179275     0.0     0.0
+  100   1.2178693558985   0.5086397222444     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  100                    5
+  101   0.1268599702638  -0.3005001135259     0.0     0.0
+  102   0.2597373732867  -0.1105476622158     0.0     0.0
+  103   0.6532234623419  -0.4431480311525     0.0     0.0
+  104   0.9875498058999   0.4584770923642     0.0     0.0
+  105   8.8989611379313   1.3643201931461     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  105                    5
+  106   0.1644618521904  -0.3143288830081     0.0     0.0
+  107   0.3116681245079  -0.0680748020104     0.0     0.0
+  108   0.7096056481246  -0.4532185470174     0.0     0.0
+  109   1.1667734681230   0.5076083495130     0.0     0.0
+  110  13.8974824364350   1.7111229989764     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  110                    5
+  111   0.2199383597845  -0.3335993056700     0.0     0.0
+  112   0.3677361964352  -0.0043010958027     0.0     0.0
+  113   0.6335763402295  -0.4232275494889     0.0     0.0
+  114   0.7394247698566   0.3656428288061     0.0     0.0
+  115   2.6995264682832   0.7512555941390     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  115                    5
+  116   0.4123391634345  -0.3926791157776     0.0     0.0
+  117   0.4782060992384   0.2244173129343     0.0     0.0
+  118   0.1402386202767   0.1306747437634     0.0     0.0
+  119   0.2247094790748   0.0143564806589     0.0     0.0
+  120   0.2707501811734  -0.2520301758205     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  120                    5
+  121   0.2259807208614  -0.0415133618112     0.0     0.0
+  122   0.4568904908397  -0.3760803271097     0.0     0.0
+  123   0.4996851462416   0.1673351017696     0.0     0.0
+  124   0.3172987994237  -0.1099777751821     0.0     0.0
+  125   0.3487151415490  -0.3572843547011     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  125                    5
+  126   0.2102449449161  -0.1003988391035     0.0     0.0
+  127   0.5569916311408  -0.4163320267830     0.0     0.0
+  128   0.6625650368811   0.3352733436347     0.0     0.0
+  129   1.7627633209844   0.6078337130746     0.0     0.0
+  130  45.0948620631829   3.0698466967076     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  130                    5
+  131   0.1879395723282  -0.1258876138778     0.0     0.0
+  132   0.5160166419559  -0.4081329229543     0.0     0.0
+  133   0.5963068694407   0.2981340383474     0.0     0.0
+  134   0.8210690809100   0.4241665425451     0.0     0.0
+  135  11.4230966480600   1.5254899824076     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  135                    5
+  136   0.1699748448249  -0.1431486680489     0.0     0.0
+  137   0.4743830177345  -0.3983407117951     0.0     0.0
+  138   0.5395946001701   0.2551004246909     0.0     0.0
+  139   0.1863423655703   0.2307733350460     0.0     0.0
+  140   0.7362651441822   0.3944374651148     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  140                    5
+  141   0.1380078208032  -0.1693254462466     0.0     0.0
+  142   0.3911907428434  -0.3767034815930     0.0     0.0
+  143   0.4712147679350   0.1647741722650     0.0     0.0
+  144   0.3112874610475  -0.0991190663106     0.0     0.0
+  145   0.3505918269593  -0.3558917117391     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  145                    5
+  146   0.1807948642752  -0.1326927638569     0.0     0.0
+  147   0.4969693785190  -0.4037474578049     0.0     0.0
+  148   0.5677313552393   0.2783722417580     0.0     0.0
+  149   0.4689851387094   0.3326613351207     0.0     0.0
+  150   4.2919375113263   0.9268856282252     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  150                    5
+  151   0.1584997140320  -0.1527304712758     0.0     0.0
+  152   0.4427775260488  -0.3903861628904     0.0     0.0
+  153   0.5070191368260   0.2209519097969     0.0     0.0
+  154   0.1856409040947   0.0939554526179     0.0     0.0
+  155   0.2723196236251  -0.0974538473947     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  155                    5
+  156   0.1629753100283  -0.1484517542011     0.0     0.0
+  157   0.4503103637710  -0.3922397236513     0.0     0.0
+  158   0.5134076404637   0.2287252844585     0.0     0.0
+  159   0.1532472955545   0.1239912920756     0.0     0.0
+  160   0.2440832753532  -0.0112821585525     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  160                    5
+  161   0.1577369718925  -0.1528185037116     0.0     0.0
+  162   0.4362218263191  -0.3886398384129     0.0     0.0
+  163   0.5009133460000   0.2135413232291     0.0     0.0
+  164   0.2147553196232   0.0664679652500     0.0     0.0
+  165   0.2672240492591  -0.1652943031212     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  165                    5
+  166   0.1503086367930  -0.1589505343675     0.0     0.0
+  167   0.4175773297774  -0.3838118590675     0.0     0.0
+  168   0.4868012739570   0.1934424295417     0.0     0.0
+  169   0.2746155808037  -0.0051833180598     0.0     0.0
+  170   0.2904227405135  -0.2938081132708     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  170                    5
+  171   0.1382174706133  -0.1682724936721     0.0     0.0
+  172   0.3853498292943  -0.3751781503179     0.0     0.0
+  173   0.4670353037596   0.1582833950350     0.0     0.0
+  174   0.3137323130440  -0.1179931099233     0.0     0.0
+  175   0.3313644838671  -0.3534294673981     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  175                    5
+  176   0.1369321709258  -0.1693368195439     0.0     0.0
+  177   0.3827091969314  -0.3744690541471     0.0     0.0
+  178   0.4656904882637   0.1554273937397     0.0     0.0
+  179   0.3147583727867  -0.1265040176797     0.0     0.0
+  180   0.3187440344651  -0.3508516468070     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  180                    5
+  181   0.1278649819185  -0.1758250233991     0.0     0.0
+  182   0.3572243264079  -0.3674002969069     0.0     0.0
+  183   0.4527686856681   0.1274414384207     0.0     0.0
+  184   0.3244026981259  -0.2037495489338     0.0     0.0
+  185   0.1060997130390  -0.2816644730653     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  185                    5
+  186   0.1247067949223  -0.1781225487648     0.0     0.0
+  187   0.3491107854646  -0.3651087702957     0.0     0.0
+  188   0.4489616346081   0.1185230276154     0.0     0.0
+  189   0.3313414187796  -0.2263027154601     0.0     0.0
+  190   0.0813547634566  -0.2459617992058     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  190                    5
+  191   0.1143747651969  -0.1850618577322     0.0     0.0
+  192   0.3194163588832  -0.3565886098430     0.0     0.0
+  193   0.4344461524424   0.0859177101726     0.0     0.0
+  194   0.3873042406216  -0.2995673414058     0.0     0.0
+  195   0.3512474302715  -0.0813233967514     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  195                    5
+  196   0.0812153535561  -0.2053381359349     0.0     0.0
+  197   0.2217566462010  -0.3269577820434     0.0     0.0
+  198   0.3675076007178  -0.0201855210651     0.0     0.0
+  199   0.6894925852767  -0.4411906960466     0.0     0.0
+  200   0.9626387941703   0.4496599668909     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  200                    5
+  201   0.0445873223787  -0.2254879307228     0.0     0.0
+  202   0.1182572009429  -0.2923110119326     0.0     0.0
+  203   0.2368105049748  -0.1295362097342     0.0     0.0
+  204   0.6071649242811  -0.4326522388717     0.0     0.0
+  205   0.8334276005914   0.4087021781807     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  205                    5
+  206   0.0033271394149  -0.2460479398852     0.0     0.0
+  207   0.0080279666579  -0.2507334755219     0.0     0.0
+  208   0.0186977052494  -0.2398442737905     0.0     0.0
+  209   0.0447191462861  -0.2650513805171     0.0     0.0
+  210   0.0994809904585  -0.2043276699292     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  210                    5
+  211   0.0000477177342  -0.2475166055471     0.0     0.0
+  212   0.0001079032900  -0.2474557552151     0.0     0.0
+  213   0.0002512160119  -0.2476006965689     0.0     0.0
+  214   0.0005896707975  -0.2472613721468     0.0     0.0
+  215   0.0013837445784  -0.2480575562869     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  215                    5
+  216   0.0000005868531  -0.2474992692836     0.0     0.0
+  217   0.0000013010290  -0.2475000255095     0.0     0.0
+  218   0.0000030498189  -0.2474982769330     0.0     0.0
+  219   0.0000071490519  -0.2475023917448     0.0     0.0
+  220   0.0000167673992  -0.2474927385089     0.0     0.0
+ MICROCYCLE DIIS UPDATE:                  220                    5
+  221   0.0000000019493  -0.2474995067081     0.0     0.0
+ --------------------------------------------------------
+ Iterations converged
+ CISD correlation energy / hartree =        -0.247499506708065
+ CISD total energy / hartree       =        -0.998669654172109
+
+ Singles contributions
+     3ag  (alpha) ---     1ag  (alpha)       -0.1583281662
+
+ Doubles contributions
+     2b1u (alpha)     2b1u (beta ) ---     1ag  (alpha)     1ag  (beta )       -1.0012524000
+     2b1u (alpha)     4b1u (beta ) ---     1ag  (alpha)     1ag  (beta )        0.1553995438
+     4b1u (alpha)     2b1u (beta ) ---     1ag  (alpha)     1ag  (beta )        0.1553995438
+
+ Parallel integral file used       4 records with       0 large values
+
+
+ Task  times  cpu:        0.7s     wall:        0.7s
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	        18	        25
+	current total bytes		         0	         0
+	maximum total bytes		   1579328	  22509416
+	maximum total K-bytes		      1580	     22510
+	maximum total M-bytes		         2	        23
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+         J. Boschen, J. Brabec, A. Bruner, E. Cauet, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Fruchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Gotz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jonsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+      A. Vazquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Wolinski,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+  E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, D. Mejia-Rodriguez,
+       A. Kunitsa, N. P. Bauman, A. Panyala, W. A. de Jong, T. P. Straatsma,
+   H. J. J. van Dam, D. Wang, T. L. Windus, J. Hammond, J. Autschbach, A. Woods,
+    K. Bhaskaran-Nair, J. Brabec, K. Lopata, S. A. Fischer, S. Krishnamoorthy,
+     M. Jacquelin, W. Ma, M. Klemm, O. Villa, Y. Chen, V. Anisimov, F. Aquino,
+     S. Hirata, M. T. Hackler, E. Hermes, L. Jensen, J. E. Moore, J. C. Becca,
+      V. Konjkov, T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza,
+        J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan,
+        A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis,
+     D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan,
+     B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:        0.7s     wall:        0.7s
