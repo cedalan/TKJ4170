@@ -1,0 +1,20 @@
+echo
+
+start molecule
+
+title "formaldehydeNotOptimized"
+memory total 4 gb
+
+charge 0
+geometry units angstrom print xyz
+ C  0.00000024     0.25211309     0.00000000
+ O -0.00000001    -0.92995152     0.00000000
+ H -0.00000012     0.83891922     0.93253272
+ H -0.00000012     0.83891922    -0.93253272
+end
+
+basis spherical
+ * library cc-pVDZ
+end
+
+task scf

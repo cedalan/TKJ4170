@@ -2,14 +2,15 @@ echo
 
 start molecule
 
-title "CHO"
+title "formaldehydeNotOptimized"
 memory total 4 gb
 
 charge 0
 geometry units angstrom print xyz
- H 0.00000 0.00000 -0.5 
  C 0.00000 0.00000 0.00000
  O 0.00000 0.00000 1.0
+ H 0.30000 0.00000 0.00000
+ H -0.3000 0.00000 0.00000
 end
 
 basis spherical
