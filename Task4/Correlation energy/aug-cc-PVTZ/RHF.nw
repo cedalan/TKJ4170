@@ -14,7 +14,7 @@ geometry units angstrom print xyz
 end
 
 basis spherical
-poop pee
+* library aug-cc-PVTZ
 end
 
 task scf

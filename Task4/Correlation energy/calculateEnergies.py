@@ -24,21 +24,26 @@ def createFiles(method_calls, method_names, basis_sets):
             filePath = "/Users/elias/Documents/NTNU/V2024/TKJ4170/TKJ4170/Task4/Correlation energy/" + basis_set + "/" + method_name
             #TODO: Create new nw files for method
 
+
             myExampleFile = open("formaldehydeOptimized.nw", "r")
 
             with open(filePath + ".nw", "w") as myFile:
                 for line in myExampleFile:
-                    if (line != "task scf"):
-                        myFile.write(line)
-                    else:
+                    print(line)
+                    if (line == "poop pee\n"):
+                        print("Does this even run once?")
+                        myFile.write("* library " + basis_set + "\n")
+                    elif (line == "task scf"):
                         myFile.write(method_call)
-
+                    else:
+                        myFile.write(line)
+            myExampleFile.close()
             print("Done creating file for method: " + method_name + "\n")
 
         print("Done creating file(s) for basis set: " + basis_set + "\n")
 
 def runCalculations(method_names, basis_sets):
-    filesToRemove = ["molecule.b", "molecule.b^-1", "molecule.c", "molecule.cfock", "molecule.db", "molecule.movecs", "molecule.p", "molecule.zmat"]
+    filesToRemove = ["molecule.b", "molecule.b^-1", "molecule.c", "molecule.cfock", "molecule.db", "molecule.movecs", "molecule.p", "molecule.zmat", "CCSD.db", "CISD.db", "RHF.db"]
 
     for basis_set in basis_sets:
         print("Running calculation(s) for basis set: " + basis_set)
@@ -59,3 +64,5 @@ def runCalculations(method_names, basis_sets):
 
         print("Done running calculation(s) for basis set: " + basis_set + "\n")
 
+createFiles(methodCalls, methodNames, basisSets)
+runCalculations(methodNames, basisSets)

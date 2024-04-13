@@ -14,7 +14,11 @@ geometry units angstrom print xyz
 end
 
 basis spherical
-poop pee
+* library cc-PVTZ
 end
 
-task scf
+tce
+ ccsd 
+end 
+
+task tce energy
