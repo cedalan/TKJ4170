@@ -1,4 +1,4 @@
 # TKJ4170
 Computational work done in TKJ4170 - Quantum chemistry
 
-This repository contains mostly programming work, but also (maybe some) submitted reports.
+This repository contains my work done in TKJ4170 in preperation for a computational report
